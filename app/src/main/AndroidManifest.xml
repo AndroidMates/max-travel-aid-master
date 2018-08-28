@@ -75,7 +75,13 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.OnBoardingScreen"
             android:configChanges="orientation|screenSize|screenLayout"
@@ -94,11 +100,6 @@
         <activity android:name=".ui.SearchActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Mobile.Theme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
     </activity>
 
     </application>

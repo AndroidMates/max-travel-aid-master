@@ -55,8 +55,9 @@ public class LoginActivity extends BaseActivity implements
 	}
 	
 	public void login(View view) {
-		String _username = username.getText().toString();
-		String _password = password.getText().toString();
+		//getting text from the views
+		String _username = username.getText().toString().trim();
+		String _password = password.getText().toString().trim();
 		
 		if (AppUtils.isValidEmail(_username) && AppUtils.isValidPassword(_password)) {
 			//Show dialog
@@ -65,10 +66,11 @@ public class LoginActivity extends BaseActivity implements
 			//Create user account
 			AppUtils.signInOrCreateUser(this, _username, _password, LoginActivity.this);
 			
-		} else AppUtils.showToast(this, "There seems to be a problem with your credentials");
+		} else AppUtils.showToast(this, "Invalid username or password");
 	}
 	
 	public void register(View view) {
+        //getting text from the views
 		String _username = username.getText().toString();
 		String _password = password.getText().toString();
 		

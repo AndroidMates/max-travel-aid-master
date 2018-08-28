@@ -7,9 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.DatePicker;
 
+import io.travelaid.R;
 import java.util.Calendar;
 
-import io.travelaid.R;
 import io.travelaid.widget.BaselineGridTextView;
 
 public class SearchActivity extends AppCompatActivity {

@@ -64,8 +64,9 @@
 			android:drawableStart="@drawable/ic_person_black_24dp"
 			android:drawablePadding="@dimen/padding_normal"
 			android:fontFamily="@font/lato"
-			android:hint="@string/username"
+			android:hint="@string/email"
 			android:inputType="text"
+			android:textSize="16sp"
 			android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 	
 	</android.support.design.widget.TextInputLayout>
@@ -92,6 +93,7 @@
 			android:fontFamily="@font/lato"
 			android:hint="@string/password"
 			android:inputType="textPassword"
+			android:textSize="16sp"
 			android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 	
 	</android.support.design.widget.TextInputLayout>

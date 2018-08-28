@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/suggestion_bg"
+    tools:context=".ui.SuggestionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="5dip"
+        android:fontFamily="@font/lato"
+        android:textColor="@color/colorAccent"
+        android:text="Name(Required)"
+        android:textSize="20sp"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+             <EditText
+                 android:layout_width="320dp"
+                 android:layout_height="42dp"
+                 android:padding="5dip"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@drawable/round_edit_text"
+                 android:layout_marginLeft="0dp"
+                 android:inputType="text"
+                 android:fontFamily="@font/lato"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/colorAccent"
+            android:text="Email(Required)"
+            android:textSize="20sp"
+            android:padding="5dip"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_edit_text"
+                android:padding="5dip"
+                android:inputType="text"
+                android:fontFamily="@font/lato"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/colorAccent"
+            android:text="Message"
+            android:textSize="20sp"
+            android:padding="5dip"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dip"
+                android:background="@drawable/round_edit_text"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:fontFamily="@font/lato"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_button_blue"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</ScrollView>

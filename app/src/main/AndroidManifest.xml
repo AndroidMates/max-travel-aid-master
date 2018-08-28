@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.travelaid"
+    android:installLocation="auto">
+
+    <!-- Added permission -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Added timber plant here -->
+    <application
+        android:name=".api.MaxBusApplication"
+        android:allowBackup="true"
+        android:appCategory="maps"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/application_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Mobile.Theme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
+
+        <!-- Added Firebase Messaging -->
+        <service android:name=".api.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+	 Set custom default icon. This is used when no icon is set for incoming notification messages.
+	 See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification"
+            android:value="@string/default_notification_channel_id" />
+        <!--
+			 Set color used with incoming notification messages. This is used when no color is set for the incoming
+			 notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="?attr/colorAccent"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:resource="@drawable/ic_stat_ic_notification"
+            android:value="@string/default_notification_channel_id" />
+
+        <!-- Splash screen with default orientation as portrait -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Mobile.Theme.FullScreen">
+        </activity>
+        <activity
+            android:name=".ui.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OnBoardingScreen"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:theme="@style/Mobile.Theme.FullScreen" />
+        <activity
+            android:name=".ui.AboutUsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Mobile.Theme.Translucent">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".ui.SuggestionActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Mobile.Theme">
+    </activity>
+
+    </application>
+
+</manifest>

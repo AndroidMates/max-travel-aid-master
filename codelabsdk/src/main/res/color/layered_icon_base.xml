@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. Property of Dennis Kwabena Bilson. No unauthorized duplication of this material should be made without prior permission from the developer
+  -->
+
+<gradient
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:angle="90"
+    android:startColor="#7E97A3"
+    android:centerColor="#78909C"
+    android:endColor="#728994"
+    android:startX="54"
+    android:startY="0"
+    android:endX="54"
+    android:endY="108"
+    android:type="linear"
+    tools:targetApi="o" />

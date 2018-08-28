@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. Property of Dennis Kwabena Bilson. No unauthorized duplication of this material should be made without prior permission from the developer
+  -->
+
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/fast_out_slow_in">
+
+    <objectAnimator
+        android:propertyName="translateX"
+        android:valueTo="-2"
+        android:duration="50" />
+
+    <objectAnimator
+        android:propertyName="translateX"
+        android:valueTo="2"
+        android:startOffset="50"
+        android:duration="100" />
+
+    <objectAnimator
+        android:propertyName="translateX"
+        android:valueTo="-2"
+        android:startOffset="150"
+        android:duration="100" />
+
+    <objectAnimator
+        android:propertyName="translateX"
+        android:valueTo="2"
+        android:startOffset="250"
+        android:duration="100" />
+
+    <objectAnimator
+        android:propertyName="translateX"
+        android:valueTo="0"
+        android:startOffset="350"
+        android:duration="50" />
+
+</set>

@@ -1,0 +1,2 @@
+in.uncod.android.bypass
+string app_name

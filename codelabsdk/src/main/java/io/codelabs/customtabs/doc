@@ -1,0 +1,5 @@
+Google Chrome custom tab handlers
+
+1. CustomTabActivityHelper: This is a helper class to manage the connection to the Custom Tabs Service
+2. CustomTabsHelper: Helper class for Custom Tabs.
+3. KeepServiceAlive: Empty service used by the custom tab to bind to, raising the application's importance.

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/n_drawer_image"
+	android:maxHeight="@dimen/header_max_height"
+	android:onClick="viewProfile"
+	tools:context=".ui.HomeActivity"
+	android:orientation="vertical"
+	android:padding="@dimen/padding_large">
+	
+	<io.travelaid.widget.CircularImageView
+		android:id="@+id/header_avatar"
+		android:layout_marginTop="@dimen/padding_large"
+		android:layout_width="@dimen/avatar_bounds"
+		android:layout_height="@dimen/avatar_bounds"
+		android:layout_marginStart="@dimen/padding_normal"
+		android:src="@drawable/avatar_placeholder"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<io.travelaid.widget.BaselineGridTextView
+		android:id="@+id/header_username"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="@dimen/padding_normal"
+		android:layout_marginTop="5dp"
+		android:ellipsize="end"
+		android:gravity="start"
+		android:maxLines="1"
+		tools:text="@string/dummy_username"
+		android:textColor="@color/colorWhite"
+		android:textSize="20sp"
+		app:fontFamily="@font/lato_bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/header_avatar"/>
+	
+	<io.travelaid.widget.BaselineGridTextView
+		android:id="@+id/header_email"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:ellipsize="end"
+		android:layout_marginStart="@dimen/padding_normal"
+		android:gravity="start"
+		android:maxLines="1"
+		tools:text="@string/dummy_email"
+		android:textColor="@color/colorWhite"
+		app:fontFamily="@font/lato"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/header_username" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@mipmap/group_image_round"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="50dp"
+        android:id="@+id/slide_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="WELCOME"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:id="@+id/slide_heading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/slide_desc"
+        android:text="@string/slide_description"
+        android:textSize="16sp"
+        android:textColor="@color/colorSecondary"
+        android:fontFamily="@font/lato"
+        android:padding="35dp"
+        android:layout_below="@+id/slide_heading"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

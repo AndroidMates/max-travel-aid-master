@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+	package
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:7:2-35
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:6:2-48
+	android:versionCode
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:1-12:12
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:5:11-69
+application
+ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:9:2-11:35
+	android:label
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:10:3-35
+	tools:replace
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml:11:3-32
+uses-sdk
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		ADDED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml
+		INJECTED from E:\PROJECT\TEAM\ANDROID\max-travel-aid-master\bypass\src\main\AndroidManifest.xml

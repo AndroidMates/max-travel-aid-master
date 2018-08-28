@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<group android:checkableBehavior="single">
+		<item android:title="@string/options">
+			<menu>
+				<item
+					android:id="@+id/profile"
+					android:icon="@drawable/ic_account_circle_black_24dp"
+					android:title="@string/profile" />
+				
+				<item
+					android:id="@+id/reservations"
+					android:icon="@drawable/ic_reservations_black_24dp"
+					android:title="@string/reservations" />
+				
+				<item
+					android:id="@+id/payment_method"
+					android:icon="@drawable/ic_payment_black_24dp"
+					android:visible="false"
+					android:title="@string/payment_method" />
+				
+				<item
+					android:id="@+id/upcoming_trips"
+					android:icon="@drawable/ic_trending_up_black_24dp"
+					android:title="@string/upcoming_trip" />
+				
+				<item
+					android:id="@+id/made_trips"
+					android:icon="@drawable/ic_card_travel_black_24dp"
+					android:title="@string/made_trip" />
+			</menu>
+		</item>
+	</group>
+	
+	<item
+		android:id="@+id/logout"
+		android:icon="@drawable/ic_exit_to_app_black_24dp"
+		android:title="@string/logout" />
+
+</menu>

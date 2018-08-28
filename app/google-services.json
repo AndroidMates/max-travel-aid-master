@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "943459468157",
+    "firebase_url": "https://max-travel-aid.firebaseio.com",
+    "project_id": "max-travel-aid",
+    "storage_bucket": "max-travel-aid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943459468157:android:cbb9d2513646c789",
+        "android_client_info": {
+          "package_name": "io.travelaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943459468157-md2otmh0mshmf38otgbi3qg1j1luo0n5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.travelaid",
+            "certificate_hash": "2da3d3c1c2cf91b5f73c8e4bdab02e7e627e1f1a"
+          }
+        },
+        {
+          "client_id": "943459468157-s6e3a90p2t7kc2hqu3411mo368asc78c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnrt_5fQUplitpVa6QURW9MM0CvsgGgIg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943459468157-s6e3a90p2t7kc2hqu3411mo368asc78c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

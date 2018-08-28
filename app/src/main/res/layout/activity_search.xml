@@ -13,8 +13,8 @@
     <RelativeLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@drawable/search_activity_background"
+        android:layout_height="310dp"
+        android:background="@drawable/search_bg"
         android:orientation="vertical">
 
         <ImageView

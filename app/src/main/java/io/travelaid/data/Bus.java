@@ -20,8 +20,12 @@ import io.travelaid.util.AppUtils;
  * <p>
  * Bus data model
  */
+
+import java.util.Date;
+
 public class Bus implements Parcelable {
 	private String number;
+	private int image;
 	private int capacity = 0;
 	private List<Seat> seats = new ArrayList<>(capacity);
 	private long departureTime;
@@ -31,8 +35,9 @@ public class Bus implements Parcelable {
 	public Bus() {
 	}
 	
-	public Bus(String number, int capacity, List<Seat> seats, long departureTime, String type) {
+	public Bus(String number, int image,int capacity, List<Seat> seats, long departureTime, String type) {
 		this.number = number;
+		this.image = image;
 		this.capacity = capacity;
 		this.seats = seats;
 		this.departureTime = departureTime;
@@ -96,7 +101,14 @@ public class Bus implements Parcelable {
 	public void setNumber(@NonNull String number) {
 		this.number = number;
 	}
-	
+
+	public void setImage(int image){
+		this.image = image;
+	}
+	public int getImage(){
+		return image;
+	}
+
 	public int getCapacity() {
 		return capacity;
 	}

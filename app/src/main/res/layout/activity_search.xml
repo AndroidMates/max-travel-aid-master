@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
     android:background="@color/colorWhite"
     tools:context=".ui.SearchActivity">
 
@@ -69,20 +70,22 @@
         app:cardCornerRadius="10dp">
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/origin"
+            android:id="@+id/origin_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal">
             <EditText
+                android:id="@+id/origin"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
                 android:drawableStart="@drawable/ic_origin_black_24dp"
                 android:layout_gravity="center_horizontal"
                 android:gravity="start"
-                android:inputType="textMultiLine"
+                android:inputType="text"
                 android:fontFamily="@font/lato_bold"
-                android:hint="@string/from"
+                android:hint="@string/origin"
                 android:textColor="@color/colorAccent"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -97,20 +100,22 @@
             android:contentDescription="@string/todo" />
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/destination"
+            android:id="@+id/destination_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
             android:layout_gravity="center_horizontal">
             <EditText
+                android:id="@+id/destination"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
                 android:drawableStart="@drawable/ic_destination_black_24dp"
                 android:layout_gravity="center"
                 android:gravity="start"
-                android:inputType="textMultiLine"
+                android:inputType="text"
                 android:fontFamily="@font/lato_bold"
-                android:hint="@string/to"
+                android:hint="@string/destination"
                 android:textColor="@color/colorAccent"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -155,7 +160,7 @@
         android:text="@string/text_search"
         android:textColor="@color/pure_white"
         android:fontFamily="@font/lato_bold"
-        android:onClick="searchBus"
+        android:onClick="search"
         android:background="@drawable/round_button_green"/>
 
 </RelativeLayout>

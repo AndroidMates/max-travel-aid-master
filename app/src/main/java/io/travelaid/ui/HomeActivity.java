@@ -7,6 +7,8 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,13 +18,20 @@ import android.widget.TextView;
 
 import com.bumptech.glide.request.target.Target;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import io.travelaid.R;
 import io.travelaid.api.GlobalUser;
 import io.travelaid.api.UserLoginListener;
+import io.travelaid.data.Bus;
+import io.travelaid.data.Passenger;
+import io.travelaid.data.Seat;
 import io.travelaid.fragments.ProfileFragment;
 import io.travelaid.fragments.ReservationsFragment;
 import io.travelaid.util.AppUtils;
 import io.travelaid.util.GlideApp;
+import io.travelaid.util.RecyclerViewAdapter;
 import io.travelaid.util.UserPrefs;
 
 public class HomeActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener, UserLoginListener {
@@ -39,6 +48,11 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
 	private Toolbar toolbar;
 	private ActionBarDrawerToggle mToggle;
 	private GlobalUser globalUser;
+
+	//instances of the recycler View
+	private List<Bus> _bus;
+	private RecyclerView _recyclerView;
+	private RecyclerViewAdapter _adapter;
 	
 	@Override
 	protected int getContentView() {
@@ -67,7 +81,69 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
 		if (globalUser != null) {
 			setupHeaderView(mNavView.getHeaderView(0));
 		}
+
+		populateBusDetails();
+
+		_recyclerView = findViewById(R.id.recycler_view_id);
+		_adapter = new RecyclerViewAdapter(this,_bus);
+		_recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+		_recyclerView.setAdapter(_adapter);
+
 		
+	}
+
+	//populates the recycler view with dummy bus details
+	private void populateBusDetails(){
+
+		// dummy instances of passengers
+		Passenger passenger = new Passenger("","","","","");
+		Passenger passenger1 = new Passenger("","","","","");
+		Passenger passenger2 = new Passenger("","","","","");
+		Passenger passenger3 = new Passenger("","","","","");
+		Passenger passenger4 = new Passenger("","","","","");
+		Passenger passenger5 = new Passenger("","","","","");
+		Passenger passenger6 = new Passenger("","","","","");
+		Passenger passenger7 = new Passenger("","","","","");
+		Passenger passenger8 = new Passenger("","","","","");
+
+		// dummy instances of seats
+		List<Seat> seats = new ArrayList<>();
+		seats.add(new Seat("1",false,passenger1));
+		seats.add(new Seat("2",false,passenger2));
+		seats.add(new Seat("3",false,passenger3));
+		seats.add(new Seat("4",false,passenger4));
+		seats.add(new Seat("5",false,passenger5));
+		seats.add(new Seat("6",false,passenger6));
+		seats.add(new Seat("7",false,passenger7));
+		seats.add(new Seat("8",false,passenger8));
+
+
+		_bus = new ArrayList<>();
+		_bus.add(new Bus("GT-654-14",R.drawable.bus1,42,seats,8L ,"VIP"));
+		_bus.add(new Bus("GT-844-08",R.drawable.bus2,45,seats,9L ,"VVIP"));
+		_bus.add(new Bus("GT-154-13",R.drawable.bus3,65,seats,10L ,"STC"));
+		_bus.add(new Bus("GT-354-12",R.drawable.bus4,55,seats,11L ,"A.O T&T"));
+		_bus.add(new Bus("GT-654-18",R.drawable.bus5,66,seats,12L ,"EXPRESS"));
+		_bus.add(new Bus("GT-844-09",R.drawable.bus6,44,seats,13L ,"VVIP"));
+		_bus.add(new Bus("GT-154-15",R.drawable.bus7,38,seats,14L ,"YUTONG"));
+		_bus.add(new Bus("GT-354-17",R.drawable.bus8,60,seats,15L ,"A.O T&T"));
+		_bus.add(new Bus("GT-654-14",R.drawable.bus1,42,seats,8L ,"VIP"));
+		_bus.add(new Bus("GT-844-08",R.drawable.bus2,45,seats,9L ,"VVIP"));
+		_bus.add(new Bus("GT-154-13",R.drawable.bus3,65,seats,10L ,"STC"));
+		_bus.add(new Bus("GT-354-12",R.drawable.bus4,55,seats,11L ,"A.O T&T"));
+		_bus.add(new Bus("GT-654-18",R.drawable.bus5,66,seats,12L ,"EXPRESS"));
+		_bus.add(new Bus("GT-844-09",R.drawable.bus6,44,seats,13L ,"VVIP"));
+		_bus.add(new Bus("GT-154-15",R.drawable.bus7,38,seats,14L ,"YUTONG"));
+		_bus.add(new Bus("GT-354-17",R.drawable.bus8,60,seats,15L ,"A.O T&T"));
+		_bus.add(new Bus("GT-654-14",R.drawable.bus1,42,seats,8L ,"VIP"));
+		_bus.add(new Bus("GT-844-08",R.drawable.bus2,45,seats,9L ,"VVIP"));
+		_bus.add(new Bus("GT-154-13",R.drawable.bus3,65,seats,10L ,"STC"));
+		_bus.add(new Bus("GT-354-12",R.drawable.bus4,55,seats,11L ,"A.O T&T"));
+		_bus.add(new Bus("GT-654-18",R.drawable.bus5,66,seats,12L ,"EXPRESS"));
+		_bus.add(new Bus("GT-844-09",R.drawable.bus6,44,seats,13L ,"VVIP"));
+		_bus.add(new Bus("GT-154-15",R.drawable.bus7,38,seats,14L ,"YUTONG"));
+		_bus.add(new Bus("GT-354-17",R.drawable.bus8,60,seats,15L ,"A.O T&T"));
+
 	}
 	
 	private void setupHeaderView(View headerView) {

@@ -30,6 +30,8 @@
     <!-- menu passenger -->
     <string name="about_us">About Us</string>
     <string name="settings">Settings</string>
+    <string name="bus_name">Bus Name</string>
+    <string name="bus_number">Bus Number</string>
 
     <!--Text for alertDialog -->
     <string name="welcome_msg_title">Welcome, username</string>
